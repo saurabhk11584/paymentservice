@@ -1,2 +1,9 @@
-package org.scaler.paymentservice.services;public interface PaymentService {
+package org.scaler.paymentservice.services;
+
+import com.razorpay.RazorpayException;
+import com.stripe.exception.StripeException;
+
+public interface PaymentService {
+    String createPaymentLink(String orderId) throws RazorpayException, StripeException;
+    String getPaymentStatus(String payementId);
 }

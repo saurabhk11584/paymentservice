@@ -1,2 +1,10 @@
-package org.scaler.paymentservice.dtos;public class CreatePaymentLinkRequestDto {
+package org.scaler.paymentservice.dtos;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class CreatePaymentLinkRequestDto {
+    private String orderId;
 }
